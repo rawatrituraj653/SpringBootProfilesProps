@@ -1,0 +1,26 @@
+my: 
+ name: rituraj from default
+ country: India by default
+ deta: details comes from default
+ code: 471001 
+spring: 
+  profiles:  
+    active:
+    - dev
+   
+--- 
+
+spring:
+  profiles: qa    
+my:
+ name: rituraj from qa
+ code: 471405 from qa
+ 
+---
+spring:
+ profiles: dev
+  
+my:
+ deta:  details from dev
+ country: india from dev    
+ 
